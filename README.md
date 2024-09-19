@@ -41,19 +41,19 @@ This project demonstrates how to build a highly available, auto-scaling infrastr
 
 ## Project Structure
 ```
-highly-available-app/
-├── README.md                     # Documentação explicando o projeto
-├── deploy.sh                     # Script de automação do deploy
-├── infrastructure/               # Configurações de infraestrutura
-│   ├── load_balancer.yaml         # Exemplo de configuração de load balancer
-│   ├── auto_scaling.yaml          # Configuração de Auto-Scaling Group
-│   ├── vpc.yaml                   # Rede (VPC, subnets, NAT Gateway)
-├── stateless-web-app/             # Aplicação sem estado
-│   ├── Dockerfile                 # Dockerfile para a aplicação
-│   ├── deployment.yaml            # Arquivo de deployment para Kubernetes
-├── stateful-backend/              # Backend com estado
-│   ├── db-config.yaml             # Configuração do banco de dados
-│   └── storage-config.yaml        # Configuração de armazenamento (ex: S3)
-└── monitoring/                    # Monitoramento e alertas
-    └── cloudwatch-config.yaml     # Configuração para monitoramento
+Stateful-Backend-task2/
+├── README.md                     
+├── deploy.sh                     
+├── infrastructure/               
+│   ├── load_balancer.yaml         
+│   ├── auto_scaling.yaml          
+│   ├── vpc.yaml                   
+├── stateless-web-app/             
+│   ├── Dockerfile                 
+│   ├── deployment.yaml            
+├── stateful-backend/              
+│   ├── db-config.yaml             
+│   └── storage-config.yaml        
+└── monitoring/                    
+    └── cloudwatch-config.yaml     
 
