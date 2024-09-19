@@ -1,0 +1,12 @@
+image:
+  repository: myrepo/microservice
+  tag: latest
+replicaCount: 3
+service:
+  type: ClusterIP
+  port: 80
+ingress:
+  enabled: true
+  hosts:
+    - "microservice.example.com"
+
