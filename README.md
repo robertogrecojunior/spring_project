@@ -40,7 +40,7 @@ This project demonstrates how to build a highly available, auto-scaling infrastr
 ---
 
 ## Project Structure
-
+```
 highly-available-app/
 ├── README.md                     # Documentação explicando o projeto
 ├── deploy.sh                     # Script de automação do deploy
