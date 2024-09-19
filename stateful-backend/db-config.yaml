@@ -1,0 +1,16 @@
+apiVersion: rds.services.k8s.aws/v1alpha1
+kind: DBInstance
+metadata:
+  name: my-db
+spec:
+  dbInstanceIdentifier: mydb
+  allocatedStorage: 20
+  dbInstanceClass: db.t2.micro
+  engine: mysql
+  masterUsername: admin
+  masterUserPassword:
+    valueFrom:
+      secretKeyRef:
+        name: mydb-secret
+        key: password
+

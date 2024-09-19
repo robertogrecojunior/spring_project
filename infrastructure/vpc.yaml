@@ -1,0 +1,25 @@
+apiVersion: vpc.k8s.aws/v1alpha1
+kind: VPC
+metadata:
+  name: highly-available-vpc
+spec:
+  cidr: 10.0.0.0/16
+  enableDnsHostnames: true
+  enableDnsSupport: true
+  subnets:
+    public:
+      - cidr: 10.0.1.0/24
+        availabilityZone: us-west-2a
+      - cidr: 10.0.2.0/24
+        availabilityZone: us-west-2b
+    private:
+      - cidr: 10.0.3.0/24
+        availabilityZone: us-west-2a
+      - cidr: 10.0.4.0/24
+        availabilityZone: us-west-2b
+  natGateway:
+    enabled: true
+    singleNatGateway: true
+  tags:
+    Name: "HighlyAvailableVPC"
+
