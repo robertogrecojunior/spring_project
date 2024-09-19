@@ -1,5 +1,5 @@
 image:
-  repository: myrepo/microservice
+  repository: nginx
   tag: latest
 replicaCount: 3
 service:
